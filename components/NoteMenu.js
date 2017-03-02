@@ -6,18 +6,13 @@ class NoteMenu extends Component {
     super(props)
   }
 
-  add(e) {
-  	const newVal = this.refs.newNoteText.value;
-    if (newVal) {
-  		this.props.addNote(newVal);
-      this.refs.newNoteText.value = "";
-   	}
+  add() {
+    // Add new note
+    // How will you get the note description from here? HINT: `refs`
   }
 
   handleKeyPress(e) {
-    if (e.which === 13) {
-      this.add();
-    }
+    // Only call `add` if the keypress is the `Enter` button
   }
 
   render() {

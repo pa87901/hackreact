@@ -3,41 +3,29 @@ import React, { Component } from 'react';
 class Note extends Component {
   constructor(props) {
     super(props)
-    // set initial state with isEditing
-    this.state = {
-      isEditing: false,
-      isHoveringButtons: false
-    }
-    this.toggleEdit = this.toggleEdit.bind(this)
-    this.update = this.update.bind(this)
-    this.delete = this.delete.bind(this)
-    this.handleMouseEnter = this.handleMouseEnter.bind(this)
-    this.handleMouseLeave = this.handleMouseLeave.bind(this)
+    // set initial state with `isEditing` and `isHoveringButtons` to initial boolean values
+    // bind functions here
   }
 
   delete() {
-    // Send id of note back up to for deletion
-  	this.props.deleteNote(this.props.noteId);
+    // Send `noteId` of note back up to for deletion
   }
 
   update() {
     // Send new note description back up
-  	var newText = this.refs.newText.value;
-  	this.props.updateNote(newText, this.props.noteId);
-    this.toggleEdit();
+    // Think about how you'll access the new description from here? HINT: 'refs'
   }
 
   toggleEdit() {
     // toggle isEditing state
-    this.setState({isEditing: !this.state.isEditing});
   }
 
   handleMouseEnter() {
-    this.setState({isHoveringButtons: true})
+    // set `isHoveringButtons` based on mouse enter event
   }
 
   handleMouseLeave() {
-    this.setState({isHoveringButtons: false})
+    // set `isHoveringButtons` based on mouse leave event
   }
 
   renderEditButtons() {
@@ -62,6 +50,7 @@ class Note extends Component {
     )
   }
 
+  // What does the `ref` attribute do below?
   renderEditForm() {
   	return (
       <li key={this.props.noteId} className="list-group-item list-group-item-info">
