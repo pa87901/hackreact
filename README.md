@@ -1,6 +1,6 @@
 # HackReact Workshop
 
-A workshop demo-ing HackReact- a to-do list app for Hackreactor students. Presented on March 2nd, 2017 by [Keith Alpichi](https://linkedin/in/keithalpichi)
+A workshop demo-ing HackReact- a to-do list app for Hackreactor students. Presented on March 2nd, 2017 by [Keith Alpichi](https://www.linkedin.com/in/keithalpichi/)
 
 ## Prerequisites
 - React syntax
@@ -11,7 +11,7 @@ A workshop demo-ing HackReact- a to-do list app for Hackreactor students. Presen
 - Solidifying understanding and use of ES6
 - How to build a React SPA app from scratch
 - React and it's functional declarative paradigm
-- Debugging with React DevTools
+- Debugging with [React DevTools](https://github.com/facebook/react-devtools)
 - State vs. Props
 - Introduction to `localStorage`
 - Introduction to lifecycle methods
