@@ -37,8 +37,8 @@ class App extends Component {
     return (
       <div>
         <h1>HackReact</h1>
-        {/* NoteMenu goes here */}
-        {/* NoteList goes here */}
+        <div>Place NoteMenu component on this line</div>
+        <div>Place NoteList component on this line</div>
       </div>
     )
   }
