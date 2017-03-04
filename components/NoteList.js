@@ -13,7 +13,7 @@ const NoteList = (props) => {
   )
 }
 
-// //************************************* The class version. Notice the small differences
+// //************************************* The class version. Notice the small differences => You have to use 'this' to get at props.
 // class NoteList extends Component {
 //   constructor(props) {
 //     super(props)

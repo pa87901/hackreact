@@ -8,7 +8,12 @@ class NoteMenu extends Component {
 
   add() {
     // Add new note
-    // How will you get the note description from here? HINT: `refs`
+    // How will you get the note description from here? HINT: `refs` SEE DOCUMENTATION
+    const text = this.refs.state.newNoteText.value
+    if (text) {
+      this.props.addNote(text);
+    }
+    this.refs.newNoteText.value = ''
   }
 
   handleKeyPress(e) {

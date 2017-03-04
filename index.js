@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'react-dom'
+import { render } from 'react-dom'  //{ render } === ReactDOM destructuring
 import App from './components/App'
 
-render(<h2>Hackreact! Place App component here</h2>, document.getElementById('app'))
+render(<App></App>, document.getElementById('app'))
